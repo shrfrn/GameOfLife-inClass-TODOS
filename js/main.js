@@ -4,7 +4,7 @@
 // TODO: add class 'occupied'
 // TODO: add toggle game btn
 // TODO: click on a TD with LIFE upgrade to SUPER_LIFE which never dies
-// TODO: click on LIFE blows up the negs around
+// TODO: click on LIFE blows up the negs around it
 
 const GAME_FREQ = 1000
 const LIFE = '🎃'
@@ -59,8 +59,10 @@ function runGeneration(board) {
 
 function countNeighbors(rowIdx, colIdx, mat) {
     var neighborsCount = 0
+
     for (var i = rowIdx - 1; i <= rowIdx + 1; i++) {
         if (i < 0 || i >= mat.length) continue
+
         for (var j = colIdx - 1; j <= colIdx + 1; j++) {
             if (i === rowIdx && j === colIdx) continue
             if (j < 0 || j >= mat[i].length) continue
