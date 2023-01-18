@@ -29,9 +29,11 @@ function play() {
 
 
 function createBoard() {
-    var board = [];
+    var board = []
+
     for (var i = 0; i < 8; i++) {
         board.push([])
+        
         for (var j = 0; j < 8; j++) {
             board[i][j] = (Math.random() > 0.5) ? LIFE : ''
         }
@@ -45,9 +47,12 @@ function renderBoard(board) {
 
 function runGeneration(board) {
     var newBoard = copyMat(board)
+
     for (var i = 0; i < board.length; i++) {
         for (var j = 0; j < board[0].length; j++) {
+    
             var numOfNeighbors = countNeighbors(i, j, board)
+    
             if ((numOfNeighbors > 2) && (numOfNeighbors < 6)) {
                 if (board[i][j] === '') newBoard[i][j] = LIFE
             }
