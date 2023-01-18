@@ -57,12 +57,12 @@ function runGeneration(board) {
     return newBoard
 }
 
-function countNeighbors(cellI, cellJ, mat) {
+function countNeighbors(rowIdx, colIdx, mat) {
     var neighborsCount = 0
-    for (var i = cellI - 1; i <= cellI + 1; i++) {
+    for (var i = rowIdx - 1; i <= rowIdx + 1; i++) {
         if (i < 0 || i >= mat.length) continue
-        for (var j = cellJ - 1; j <= cellJ + 1; j++) {
-            if (i === cellI && j === cellJ) continue
+        for (var j = colIdx - 1; j <= colIdx + 1; j++) {
+            if (i === rowIdx && j === colIdx) continue
             if (j < 0 || j >= mat[i].length) continue
             if (mat[i][j] === LIFE) neighborsCount++
         }
