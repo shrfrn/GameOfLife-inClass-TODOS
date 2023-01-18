@@ -1,4 +1,6 @@
-// TODO: render the board in table
+'use strict'
+
+// TODO: render the board in an HTML table
 // TODO: add class 'occupied'
 // TODO: add toggle game btn
 // TODO: click on a TD with LIFE upgrade to SUPER_LIFE and never dies
@@ -15,8 +17,8 @@ var gGameInterval;
 function init() {
     gBoard = createBoard();
     renderBoard(gBoard)
-    if (gGameInterval) clearInterval(gGameInterval)
-    gGameInterval = setInterval(play, GAME_FREQ);
+    // if (gGameInterval) clearInterval(gGameInterval)
+    // gGameInterval = setInterval(play, GAME_FREQ);
 }
 
 
