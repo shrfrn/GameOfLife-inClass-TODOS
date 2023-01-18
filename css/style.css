@@ -1,8 +1,12 @@
+table, td {
+    border: 1px solid black;
+}
 .board td {
     width: 30px;
     height: 30px;
     text-align: center;
     transition: 0.5s;
+    padding: 10px;
 }
 
 .board td:hover {
