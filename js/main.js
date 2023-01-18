@@ -3,7 +3,7 @@
 // TODO: render the board in an HTML table
 // TODO: add class 'occupied'
 // TODO: add toggle game btn
-// TODO: click on a TD with LIFE upgrade to SUPER_LIFE and never dies
+// TODO: click on a TD with LIFE upgrade to SUPER_LIFE which never dies
 // TODO: click on LIFE blows up the negs around
 
 const GAME_FREQ = 1000
