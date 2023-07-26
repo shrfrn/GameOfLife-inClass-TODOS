@@ -1,6 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
 table, td {
     border: 1px solid black;
 }
+
 .board td {
     width: 30px;
     height: 30px;
