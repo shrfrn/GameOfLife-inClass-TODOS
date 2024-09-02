@@ -1,3 +1,5 @@
+'use strict'
+
 function copyMat(mat) {
     var newMat = []
     for (var i = 0; i < mat.length; i++) {
